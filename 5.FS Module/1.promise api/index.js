@@ -65,9 +65,20 @@ import * as fs from "fs/promises";
 // }
 
 //copy File
-try{
-    await fs.copyFile("D:\\read.txt","D:\\Read.md")
+// try{
+//     await fs.copyFile("D:\\read.txt","D:\\Read.md")
    
+// }catch(err){
+//     console.log(err);
+// }
+
+//Get File Information
+try{
+    const info = await fs.stat("D:\\Read.md")
+    //console.log(info);
+    console.log(info.isDirectory());
+    console.log(info.isFile());
+    
 }catch(err){
     console.log(err);
 }
