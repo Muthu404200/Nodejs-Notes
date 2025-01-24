@@ -73,12 +73,12 @@ import * as fs from "fs/promises";
 // }
 
 //Get File Information
-try{
-    const info = await fs.stat("D:\\Read.md")
-    //console.log(info);
-    console.log(info.isDirectory());
-    console.log(info.isFile());
+// try{
+//     const info = await fs.stat("D:\\Read.md")
+//     //console.log(info);
+//     console.log(info.isDirectory());
+//     console.log(info.isFile());
     
-}catch(err){
-    console.log(err);
-}
+// }catch(err){
+//     console.log(err);
+// }
